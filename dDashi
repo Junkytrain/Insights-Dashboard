@@ -1,0 +1,37 @@
+import pandas as pd
+
+# Sample property data
+property_data = [
+    {
+        "property_id": 1,
+        "property_name": "Cozy Cottage",
+        "location": "Mountains",
+        "occupancy_rate": 0.75,
+        "revenue": 5000,
+        "rating": 4.5
+    },
+    {
+        "property_id": 2,
+        "property_name": "Beach House",
+        "location": "Coast",
+        "occupancy_rate": 0.90,
+        "revenue": 8000,
+        "rating": 4.8
+    },
+    {
+        "property_id": 3,
+        "property_name": "City Loft",
+        "location": "City Center",
+        "occupancy_rate": 0.60,
+        "revenue": 6000,
+        "rating": 4.3
+    }
+]
+
+# Convert property data to a DataFrame
+df = pd.DataFrame(property_data)
+
+# Saving property data to a CSV file
+df.to_csv("property_data.csv", index=False)
+
+print("Sample property data saved to property_data.csv.")
